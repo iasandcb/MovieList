@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "MovieCenter.h"
 
 @interface MovieListTests : XCTestCase
 
@@ -28,7 +29,22 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    MovieCenter *center = [MovieCenter sharedMovieCenter];
+    
+    NSInteger movieId = [center addMovieWithName:@"어벤져스"];
+    NSString *movieName = [center getNameOfMovieAtId:movieId];
+    XCTAssertEqualObjects(@"어벤져스", movieName, @"틀림");
+    
+
+//    NSString *actorName = [center getNameOfActorAtIndex:0 inMovie:0];
+//    XCTAssertTrue([@"스칼렛요한슨" isEqualToString:actorName], @"Strings are not equal %@ %@", @"스칼렛요한슨", actorName);
 }
+
+
+
+
+
+
+
 
 @end

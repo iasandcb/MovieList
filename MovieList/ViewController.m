@@ -10,6 +10,7 @@
 #import "MovieCenter.h"
 
 @interface ViewController ()<UITableViewDataSource, UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *table;
 
 @end
 
@@ -17,7 +18,14 @@
     MovieCenter *_movieCenter;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+}
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [_movieCenter addMovieWithName:textField.text];
+    [self.table reloadData];
+    textField.text = @"";
     [textField resignFirstResponder];
     return YES;
 }

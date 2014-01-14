@@ -23,6 +23,7 @@
 		1334A72818850EC000032396 /* MovieListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1334A72718850EC000032396 /* MovieListTests.m */; };
 		1334A7331885103700032396 /* ActorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1334A7321885103700032396 /* ActorViewController.m */; };
 		1334A736188512B700032396 /* MovieCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1334A735188512B700032396 /* MovieCenter.m */; };
+		1334A7381885255C00032396 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1334A7371885255C00032396 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		1334A7321885103700032396 /* ActorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActorViewController.m; sourceTree = "<group>"; };
 		1334A734188512B700032396 /* MovieCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCenter.h; sourceTree = "<group>"; };
 		1334A735188512B700032396 /* MovieCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCenter.m; sourceTree = "<group>"; };
+		1334A7371885255C00032396 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1334A7381885255C00032396 /* libsqlite3.dylib in Frameworks */,
 				1334A6FF18850EC000032396 /* CoreGraphics.framework in Frameworks */,
 				1334A70118850EC000032396 /* UIKit.framework in Frameworks */,
 				1334A6FD18850EC000032396 /* Foundation.framework in Frameworks */,
@@ -107,6 +110,7 @@
 		1334A6FB18850EC000032396 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1334A7371885255C00032396 /* libsqlite3.dylib */,
 				1334A6FC18850EC000032396 /* Foundation.framework */,
 				1334A6FE18850EC000032396 /* CoreGraphics.framework */,
 				1334A70018850EC000032396 /* UIKit.framework */,
